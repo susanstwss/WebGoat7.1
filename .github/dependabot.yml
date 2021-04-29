@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.springframework:spring-webmvc
+    versions:
+    - 5.3.5
+  - dependency-name: org.springframework:spring-aop
+    versions:
+    - 5.3.5
+  - dependency-name: org.springframework:spring-core
+    versions:
+    - 5.3.5
+  - dependency-name: org.springframework.security:spring-security-web
+    versions:
+    - 5.4.5
+  - dependency-name: org.springframework.security:spring-security-config
+    versions:
+    - 5.4.5
+  - dependency-name: org.springframework.security:spring-security-core
+    versions:
+    - 5.4.5
